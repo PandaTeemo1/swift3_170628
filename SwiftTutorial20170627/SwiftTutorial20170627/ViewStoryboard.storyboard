@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Nfl-Rb-kxM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="25w-es-3IL">
+            <objects>
+                <viewController id="Nfl-Rb-kxM" customClass="VT4ViewController" customModule="SwiftTutorial20170627" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hEM-YX-4OG"/>
+                        <viewControllerLayoutGuide type="bottom" id="adU-RA-z1e"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Dkw-Ev-ukF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iAJ-b7-0b6">
+                                <rect key="frame" x="164" y="280" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="wind:" destination="Nfl-Rb-kxM" eventType="touchUpInside" id="k4D-MP-O51"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <segue destination="FF0-AF-yyD" kind="presentation" identifier="ManualSegue" id="epK-S2-r2N"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LcF-80-bRD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="441" y="-1526"/>
+        </scene>
+        <!--Title-->
+        <scene sceneID="pG6-is-aMN">
+            <objects>
+                <viewController id="MPU-OM-G7g" customClass="VT3ViewController" customModule="SwiftTutorial20170627" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Nip-TU-GCU"/>
+                        <viewControllerLayoutGuide type="bottom" id="IM6-dl-Gih"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="YRm-hq-aH5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Title" id="3NQ-Mf-AOK">
+                        <rightBarButtonItems>
+                            <barButtonItem systemItem="fastForward" id="j5r-Xq-j9U">
+                                <connections>
+                                    <action selector="moveNext:" destination="MPU-OM-G7g" id="wKB-rq-Wbq"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem systemItem="play" id="arL-Xu-mfo">
+                                <connections>
+                                    <segue destination="FF0-AF-yyD" kind="show" id="nY9-Nv-sqc"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ged-of-8xT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="441" y="-872"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="WPs-G3-8CJ">
+            <objects>
+                <viewController id="Cgk-1i-b0e" customClass="VT1ViewController" customModule="SwiftTutorial20170627" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="uMB-9t-TnX"/>
+                        <viewControllerLayoutGuide type="bottom" id="MlY-ba-i41"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="7bq-Aw-c68">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bh8-fd-NPg">
+                                <rect key="frame" x="155" y="126" width="65" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="다음페이지"/>
+                                <connections>
+                                    <action selector="moveNext:" destination="Cgk-1i-b0e" eventType="touchUpInside" id="gyz-Yg-5X1"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="첫번째페이지" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ht8-DT-j1F">
+                                <rect key="frame" x="143" y="47" width="89" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zgA-Ma-eCN">
+                                <rect key="frame" x="137" y="276" width="101" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Next By Segue"/>
+                                <connections>
+                                    <segue destination="FF0-AF-yyD" kind="presentation" id="LdL-si-xD5"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jpt-je-vxC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="441" y="-181"/>
+        </scene>
+        <!--SecondView-->
+        <scene sceneID="KMy-yC-9eg">
+            <objects>
+                <viewController storyboardIdentifier="SecondVC" id="FF0-AF-yyD" customClass="TV2ViewController" customModule="SwiftTutorial20170627" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="EbN-vs-MYk"/>
+                        <viewControllerLayoutGuide type="bottom" id="DvW-i1-wwN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="YMU-qp-L3m">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="두번째페이지" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yjK-GA-2bA">
+                                <rect key="frame" x="143" y="83" width="89" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rHm-Xe-Mqd">
+                                <rect key="frame" x="155" y="201" width="65" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="이전페이지"/>
+                                <connections>
+                                    <action selector="move:" destination="FF0-AF-yyD" eventType="touchUpInside" id="C8s-cU-i79"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0qg-ei-lNN">
+                                <rect key="frame" x="160" y="306" width="54" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="UnWind"/>
+                                <connections>
+                                    <segue destination="Sbo-u7-AJc" kind="unwind" unwindAction="unwindVT4WithSegue:" id="QXN-ON-Xsg"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="SecondView" id="35p-un-hT3"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eVq-SJ-VUq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="Sbo-u7-AJc" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1262" y="-1482"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Skr-tS-HI5">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Qyj-7F-1uf" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="VZX-gx-F0G">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="MPU-OM-G7g" kind="relationship" relationship="rootViewController" id="KfO-1m-qZx"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a5v-Fw-fdj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-431.19999999999999" y="-820.83958020989508"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="epK-S2-r2N"/>
+    </inferredMetricsTieBreakers>
+</document>
